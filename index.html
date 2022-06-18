@@ -6,66 +6,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="html, css, Andrii">
         <meta name="discription" content="тут має знаходитись абзац з уровком в пошуку  в google">
+        <link rel="stylesheet" href="styles.css">
         <title>Мій сайт</title>
     </head>
-<body>
-    <img src="IMG_4770.JPG" alt="фото аватарки" width="170" height="250">
-    <h1>Andrii Herasymchuk</h1>
-    <p>Lorem ipsum dolor sit <strong> amet consectetur adipisicing elit</strong>. Reprehenderit quaerat ad aspernatur pariatur?</p>
-    <p>Lorem ipsum dolor sit <em> amet consectetur</em> adipisicing elit.</p>
-    <h4>список соціальних мереж:</h4>
-    <a href="https://www.instagram.com/andriiherasymchuk/" target="_blank">Instagram</a>
-    <a href="https://vk.com/geravalimark/" target="_blank">VK</a>
-    <a href="https://www.facebook.com/andrii.herasymchuk.7" target="_blank">FACEBOOK</a>
-    <h2>Моє хоббі</h2>
-    <ol>
-        <li>подорожувати</li>
-        <li>вчити програмування</li>
-        <li>кататяся на велосипеді</li>
-        <li>відпочивати з друзями</li>
-    </ol>
-    <h2>Досвід роботи</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Назва</th>
-                <th>Посада</th>
-                <th>Рік</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                 <td>traktor</td>
-                 <td>mechanik</td>
-                 <td>2017-2021</td>
-            </tr>
-            <tr>
-                <td>wentylacja</td>
-                <td>monter</td>
-                <td>2021</td>
-           </tr>
-           <tr>
-            <td>mebloo</td>
-            <td>monter</td>
-            <td>2021-2022</td>
-       </tr>
-        </tbody>
-    </table>
-    <h2>Звязатися зі мною</h2>
-    <form >
-        <label for="name">Введіть імя:</label>
-        <input type="text" id="name" placeholder="Введіть імя">
-    </form>
-    <form >
-        <label for="email">Введіть e-mail:</label>
-        <input type="email" id="email" placeholder="Введіть e-mail">
-    </form>
-    <form >
-        <label for="comments">Введіть повідомлення</label><br>
-        <textarea   placeholder="Введіть повідомлення..." id="comments" cols="25" rows="5"></textarea>
-    </form>
-    <form >
-        <input type="submit" value="Відпрпавити!">
-    </form>
+<body class="container">
+    <div class="info">
+        <img src="IMG_4770.JPG" alt="фото аватарки" width="170" height="250">
+        <div class="info-text">    
+            <h1>Andrii Herasymchuk</h1>
+            <p>Lorem ipsum dolor sit <strong> amet consectetur adipisicing elit</strong>. Reprehenderit quaerat ad aspernatur pariatur?</p>
+            <p>Lorem ipsum dolor sit <em> amet consectetur</em> adipisicing elit.</p>
+            <h4>Cписок соціальних мереж:</h4>
+            <a href="https://www.instagram.com/andriiherasymchuk/" target="_blank">Instagram</a>
+            <a href="https://vk.com/geravalimark/" target="_blank">VK</a>
+            <a href="https://www.facebook.com/andrii.herasymchuk.7" target="_blank">FACEBOOK</a>
+        </div> 
+    </div>
+    <div class="card br-aqua"> 
+        <h2>Моє хоббі</h2>
+        <ol class="list">
+            <li>подорожувати</li>
+            <li>вчити програмування</li>
+            <li>кататяся на велосипеді</li>
+            <li>відпочивати з друзями</li>
+        </ol>
+    </div>
+    <div class="card br-khaki">
+        <h2>Досвід роботи</h2>
+        <table class="list-link">
+            <thead>
+                <tr>
+                    <th>Назва</th>
+                    <th>Посада</th>
+                    <th>Рік</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>traktor</td>
+                    <td>mechanik</td>
+                    <td>2017-2021</td>
+                </tr>
+                <tr>
+                    <td>wentylacja</td>
+                    <td>monter</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>mebloo</td>
+                    <td>monter</td>
+                    <td>2021-2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form class="form">
+        <h2>Звязатися зі мною</h2>
+        <div class="from-row">
+            <div class="form-group">
+                <label for="name">Введіть імя:</label>
+                <input type="text" id="name" placeholder="Введіть імя">
+            </div>
+            <div class="form-group">
+                <label for="email">Введіть e-mail:</label>
+                <input type="email" id="email" placeholder="Введіть e-mail">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Введіть повідомлення</label><br>
+            <textarea   placeholder="Введіть повідомлення..." id="comments" cols="25" rows="5"></textarea>
+        </div>
+        <form >
+            <input class="btn" type="submit" value="Відпрпавити!">
+        </form>
 </body>
 </html>
